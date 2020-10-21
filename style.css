@@ -1174,7 +1174,33 @@ li.current_page_item a {
     margin-bottom: 17px;
 }
 
+.contactpage {
+    padding: 100px 0px;
+}
 
+p.contentbigger {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+ul.socialinfocompany {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+ul.socialinfocompany li {
+    flex: 0 45%;
+    margin-bottom: 60px;
+}
+
+ul.socialinfocompany img {
+    margin-bottom: 20px;
+}
+.contentcontactPage {
+    max-width: 600px;
+}
 
 
 
