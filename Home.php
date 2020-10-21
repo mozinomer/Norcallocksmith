@@ -1,34 +1,5 @@
 <?php /* Template Name: Home Page */ get_header(); ?>
-<div class="bannerCOntainer">
-	<div class="sliderContainer">
-		<div class="slidebanner" style="background: url('<?php echo get_template_directory_uri(); ?>/images/3.png');">
-			<div class="container">
-				<div class="contentslider">
-					<h6>We’re There For Your Care</h6>
-					<h2>Get All The Locks Done</h2>
-					<p>NorCal Locksmith is the premier locksmithing service in the greater Sacramento California area</p>
-					<div class="containerbutton">
-						<a href="#" class="bluebutton">LEARN MORE</a>
-						<a href="#" class="whitebutton">OUR SERVICES</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slidebanner" style="background: url('<?php echo get_template_directory_uri(); ?>/images/3.png');">
-			<div class="container">
-				<div class="contentslider">
-					<h6>We’re There For Your Care</h6>
-					<h2>Get All The Locks Done</h2>
-					<p>NorCal Locksmith is the premier locksmithing service in the greater Sacramento California area</p>
-					<div class="containerbutton">
-						<a href="#" class="bluebutton">LEARN MORE</a>
-						<a href="#" class="whitebutton">OUR SERVICES</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
 <div class="aboutSection">
 	<div class="container">
 		<div class="row">
