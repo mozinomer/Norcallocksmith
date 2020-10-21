@@ -2,8 +2,8 @@
 	<div class="container">
 		<div class="contentlefttouch">
 			<div class="ctasu">
-			<h2>Get In Touch With Us!</h2>
-			<p>What ever your locksmithing needs may be our Norcal Locksmiths are here to provide you with the highest quality service. Guaranteed!</p>
+			<h2><?php the_field('cta_heading_footer', 'option'); ?></h2>
+			<p><?php the_field('cta_footer_content', 'option'); ?></p>
 			</div>
 			<!-- <button ></button> -->
 
@@ -19,10 +19,10 @@
 			<div class="row">
 				<div class="col-md-8">
 					<h6>Contact</h6>
-					<h2>Take advantage of expert knowledge</h2>
-					<p>Feel free to get in touch with us via email or phone</p>
+					<h2><?php the_field('footer_black_top_heading', 'option'); ?></h2>
+					<p><?php the_field('fell_free_link', 'option'); ?></p>
 					<div class="infoLInks">
-						<a href="mailto:alex.reid@mail.com">alex.reid@mail.com</a>
+						<a href="mailto:<?php the_field('email_company', 'option'); ?>"><?php the_field('email_company', 'option'); ?></a>
 						<a href="tel:<?php the_field('phone_numbera', 'option'); ?>"><?php the_field('phone_numbera', 'option'); ?></a>
 					</div>
 				</div>
@@ -39,34 +39,48 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="logocontainer">
-						<img src="./images/8.png">
+						<a href="<?php echo site_url(); ?>">
+		                     <?php 
+		                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+		                        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+		                        echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+		                     ?>
+		                 </a>
 					</div>
 					<ul class="socialLInksFooter">
-						<li><a href="#">FB</a></li>
-						<li><a href="#">In</a></li>
-						<li><a href="#">tw</a></li>
-						<li><a href="#">ig</a></li>
-						<li><a href="#">yt</a></li>
+						<li><a href="<?php the_field('facebook', 'option'); ?>">FB</a></li>
+						<li><a href="<?php the_field('linkedin', 'option'); ?>">In</a></li>
+						<li><a href="<?php the_field('twitter', 'option'); ?>">tw</a></li>
+						<li><a href="<?php the_field('ig', 'option'); ?>">ig</a></li>
+						<li><a href="<?php the_field('youtube', 'option'); ?>">yt</a></li>
 					</ul>
 				</div>
 				<div class="col-md-8">
 					<div class="contaienrmenufooter">
 						<div class="menucontainer">
 							<h6>Company</h6>
-							<ul>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Service</a></li>
-								<li><a href="#">Contact us</a></li>
-								<li><a href="#">Resources</a></li>
-							</ul>
+							<?php
+			                    wp_nav_menu( array( 
+			                        'theme_location' => 'header-menu', 
+			                        'container_class' => 'custom-menu-class' ) ); 
+			                ?>
 						</div>
 						<div class="menucontainer">
 							<h6>Services</h6>
 							<ul>
-								<!-- <li><a href="#">Automotive</a></li> -->
-								<li><a href="#">Commercial</a></li>
-								<li><a href="#">Residential</a></li>
-								<li><a href="#">Safes</a></li>
+								<?php 
+								    $args = array(  
+								        'post_type' => 'services',
+								        'post_status' => 'publish',
+								    );
+								    $loop = new WP_Query( $args );  while ( $loop->have_posts() ) : $loop->the_post(); ?>
+										<li>
+											<a href="<?php the_permalink(); ?>">
+												<?php the_title(); ?>
+											</a>
+										</li>
+								    <?php endwhile; wp_reset_postdata(); 
+								?>
 							</ul>
 						</div>
 						<div class="menucontainer">
@@ -77,7 +91,7 @@
 							</ul>
 							<div class="joinTeam">
 								<h4>Join our team</h4>
-								<a href="#" class="mailjanu">careers@norcallocksmith.com</a>
+								<a href="mailto:<?php the_field('career_email', 'option'); ?>" class="mailjanu"><?php the_field('career_email', 'option'); ?></a>
 							</div>
 						</div>
 					</div>
@@ -87,7 +101,9 @@
 	</div>
 	<div class="copyrights">
 		<div class="container">
-			<p>Copyright © 2020 Norcal Locksmith</p>
+			<p>
+				<?php the_field('copy_rights_line', 'option'); ?>
+			</p>
 		</div>
 	</div>
 </footer>

@@ -24,10 +24,18 @@
 <header>
     <div class="headertopCOntainer">
         <div class="container">
-            <div class="imagelogo"><img src="<?php echo get_template_directory_uri(); ?>/images/8.png"></div>
+            <div class="imagelogo">
+                <a href="<?php echo site_url(); ?>">
+                     <?php 
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                        echo '<img src="' . esc_url( $custom_logo_url ) . '" alt="">';
+                     ?>
+                 </a>
+            </div>
             <div class="timingandcontact">
                 <span class="timingHeader">
-                    MON to FRI : 08:00 AM - 08:00 PM  
+                   <?php the_field('company_timing_', 'option'); ?>
                 </span>
                 <a href="#" class="bluebutton">Contact us</a>
             </div>

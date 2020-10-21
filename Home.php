@@ -114,71 +114,33 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="contentaccessories">
-					<h6>ACCESSORIES</h6>
-					<h2>Superb Quality Hardware</h2>
-					<p>NorCal Locksmith is the premier locksmithing service in the greater Placer County Area. We pride ourselves on providing our customers with professional and quality work.</p>
-					<a href="#" class="bluebutton">EXPLORE ALL</a>
+					<h6><?php the_field('sub_headingA'); ?></h6>
+					<h2><?php the_field('headingAc'); ?></h2>
+					<p><?php the_field('contentAc'); ?></p>
+					<a href="<?php the_field('button_linkAC'); ?>" class="bluebutton"><?php the_field('button_textAC'); ?></a>
 				</div>
 			</div>
 			<div class="col-md-8">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/7.png">
+				<img src="<?php the_field('image_AC'); ?>">
 			</div>
 		</div>
 	</div>
 </div>
 <div class="testimonials">
 	<div class="container">
-		<h6>TESTIMONIALS</h6>
-		<h2>What Our Clients Saying</h2>
+		<h6><?php the_field('group_headingtest'); ?></h6>
+		<h2><?php the_field('client_headingTest'); ?></h2>
 		<div class="sliderCOntainertestimonials">
+			<?php if( have_rows('testimonial') ): while( have_rows('testimonial') ) : the_row(); ?>
 			<div class="slideItemtestimonials">
 				<div class="innerCOntainerslider">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<h6 class="namePerson">Mary Lawson</h6>
-					<p class="designatedPerson">UI/UX Designer</p>
-					<p class="testimonialreview">“ Cras eu elit congue, placerat dui ut, tincidunt nisl. Nulla leo elit, pharetra bibendum justo quis, cursus consectetur erat. Sed nec posuere turpis. Maecenas nec bibendum purus. Nulla fringilla, lorem iaculis iaculis fermentum, ligula nibh mollis ipsum.“</p>
+					<img src="<?php the_sub_field('imagetest'); ?>">
+					<h6 class="namePerson"><?php the_sub_field('name_test'); ?></h6>
+					<p class="designatedPerson"><?php the_sub_field('designationtest'); ?></p>
+					<p class="testimonialreview">“<?php the_sub_field('reviewtest'); ?>“</p>
 				</div>
 			</div>
-			<div class="slideItemtestimonials">
-				<div class="innerCOntainerslider">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<h6 class="namePerson">Mary Lawson</h6>
-					<p class="designatedPerson">UI/UX Designer</p>
-					<p class="testimonialreview">“ Pellentesque tincidunt tristique neque, eget venenatis enim gravida quis. Fusce at egestas libero. Cras convallis egestas ullamcorper. Suspendisse sed ultricies nisl, pharetra rutrum mauris. Vestibulum at massa dui. Morbi et purus velit. Etiam tristique, justo eu condimentum efficitur, purus velit facilisis sem, id fringilla tortor quam quis dolor. Praesent ultricies dignissim ex, at volutpat sapien ullamcorper rhoncus. Curabitur quam velit, ullamcorper ut congue eget, convallis et velit. Donec placerat, magna eu venenatis tempus, dui sapien aliquam libero. “</p>
-				</div>
-			</div>
-			<div class="slideItemtestimonials">
-				<div class="innerCOntainerslider">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<h6 class="namePerson">Mary Lawson</h6>
-					<p class="designatedPerson">UI/UX Designer</p>
-					<p class="testimonialreview">“ Cras eu elit congue, placerat dui ut, tincidunt nisl. Nulla leo elit, pharetra bibendum justo quis, cursus consectetur erat. Sed nec posuere turpis. Maecenas nec “</p>
-				</div>
-			</div>
-			<div class="slideItemtestimonials">
-				<div class="innerCOntainerslider">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<h6 class="namePerson">Mary Lawson</h6>
-					<p class="designatedPerson">UI/UX Designer</p>
-					<p class="testimonialreview">“ Cras eu elit congue, placerat dui ut, tincidunt nisl. Nulla leo elit, pharetra bibendum justo quis, cursus consectetur erat. Sed nec posuere. “</p>
-				</div>
-			</div>
-			<div class="slideItemtestimonials">
-				<div class="innerCOntainerslider">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<h6 class="namePerson">Mary Lawson</h6>
-					<p class="designatedPerson">UI/UX Designer</p>
-					<p class="testimonialreview">“ Cras eu elit congue, placerat dui ut, tincidunt nisl. Nulla leo elit, pharetra bibendum justo quis, cursus consectetur erat. Sed nec posuere turpis. Maecenas nec bibendum purus. Nulla fringilla, lorem iaculis iaculis fermentum, ligula nibh mollis ipsum.“</p>
-				</div>
-			</div>
-			<div class="slideItemtestimonials">
-				<div class="innerCOntainerslider">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<h6 class="namePerson">Mary Lawson</h6>
-					<p class="designatedPerson">UI/UX Designer</p>
-					<p class="testimonialreview">“ Cras eu elit congue, placerat dui ut, tincidunt nisl. Nulla leo elit, pharetra bibendum justo quis, cursus consectetur erat. Sed nec posuere turpis. Maecenas nec bibendum purus. Nulla fringilla, lorem iaculis iaculis fermentum, ligula nibh mollis ipsum.“</p>
-				</div>
-			</div>
+			<?php endwhile; else : endif; ?>
 		</div>
 	</div>
 </div>
