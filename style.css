@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
 body, .row, p, ul, ol, a, a:hover, *:focus {
-	margin: 0px;
-	padding: 0px;
-	text-decoration: none;
-	outline: none !important;
-	border: none
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    outline: none !important;
+    border: none
 }
 
 .container {
@@ -12,11 +12,11 @@ body, .row, p, ul, ol, a, a:hover, *:focus {
 }
 
 * {
-	font-family: 'Raleway', sans-serif;
-	scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 a {
-	transition: 0.6s all
+    transition: 0.6s all
 }
 .slidebanner {
     min-height: 800px;
@@ -181,16 +181,16 @@ body {
 .teamSection h6::after,
 .testimonials h6::after
 {
-	content: "";
-	display: block;
-	width: 50px;
-	height: 4px;
-	background: #1e6fb1;
-	margin: auto;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #1e6fb1;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .whatwedo h2, 
@@ -209,11 +209,11 @@ body {
 }
 /* the slides */
 .slick-slide {
-	margin: 0 27px;
+    margin: 0 27px;
 }
 /* the parent */
 .slick-list {
-	margin: 0 -27px;
+    margin: 0 -27px;
 }
   .imgaeCOntainerwhat {
     border-radius: 22px;
@@ -246,7 +246,7 @@ body {
 
 .contentWhatSlider a:after {content: "";width: 0;height: 0;border-top: 6px solid transparent;border-bottom: 4px solid transparent;border-left: 9px solid #1E6FB1;position: absolute;right: 0px;top: 0;bottom: -3px;margin: auto;right: -23px;}
 body {
-	overflow-x: hidden; 
+    overflow-x: hidden; 
 }
 .contentcontainerCTA {}
 
@@ -478,7 +478,7 @@ span.designation {
     max-width: 1440px;
 }
 .testimonials h6, .testimonials h2 {
-	text-align: center;
+    text-align: center;
 }
 .slideItemtestimonials img {
     width: 50px;
@@ -525,7 +525,7 @@ p.testimonialreview {
     padding: 0px 30px;
 }
 .sliderCOntainertestimonials .slick-next {
-	position: absolute;
+    position: absolute;
     top: 0;
     right: -30px;
     bottom: 0;
@@ -538,26 +538,26 @@ p.testimonialreview {
 
 }
 .sliderCOntainertestimonials .slick-next::before {
-	content: "";
-	display: block;
-	width: 20px;
-	height: 20px;
-	border: 3px solid #707070;
-	position: absolute;
-	right: 0;
-	left: -10px;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	transform: rotate(45deg);
-	border-left: 0;
-	border-bottom: 0;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #707070;
+    position: absolute;
+    right: 0;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-bottom: 0;
 }
 
 
 
 .sliderCOntainertestimonials .slick-prev {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: -30px;
     bottom: 0;
@@ -570,23 +570,24 @@ p.testimonialreview {
 
 }
 .sliderCOntainertestimonials .slick-prev::before {
-	content: "";
-	display: block;
-	width: 20px;
-	height: 20px;
-	border: 3px solid #707070;
-	position: absolute;
-	right: 0;
-	left: -10px;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	transform: rotate(-135deg);
-	border-left: 0;
-	border-bottom: 0;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #707070;
+    position: absolute;
+    right: 0;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(-135deg);
+    border-left: 0;
+    border-bottom: 0;
 }
 .getintouch {
     padding: 100px 0px;
+    background: #F7F7F7;
 }
 
 .contentlefttouch {display: flex;align-items: center;max-width: 1276px;justify-content: space-between;}
@@ -963,22 +964,22 @@ header.scrolled .timingandcontact {
 }
 
 header.scrolled .menucontainerMain {
-	position: absolute;
-	right: 0px;
+    position: absolute;
+    right: 0px;
 }
 header.scrolled #scrolledmenu {
-	transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
 }
 #scrolledmenu {
-	position: absolute;
-	right: 0px;
-	transform: translate(0px, -400px);
+    position: absolute;
+    right: 0px;
+    transform: translate(0px, -400px);
 }
 .bannerCOntainer {
     overflow: hidden;
 }
 .hamburger {
-	display: none;
+    display: none;
 }
 header.scrolled {
     display: none;
@@ -1002,6 +1003,80 @@ header.scrolled {
     opacity: 0.7;
     max-width: 510px;
     margin: 30px 0px 0px;
+}
+div#servicesAbout .row {
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+div#servicesAbout img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+}
+
+div#servicesAbout .bluebutton {
+    max-width: max-content;
+    padding: 0px 40px;
+    margin: 40px 0px 0px;
+    font-weight: 600;
+    border: 2px solid #1e6fb1;
+}
+
+div#servicesAbout .bluebutton:hover {/* border: 2px solid; */color: #1e6fb1;}
+
+div#servicesAbout p {
+    margin-top: 20px;
+    opacity: 0.7;
+    font-size: 16px;
+    max-width: 590px;
+}
+
+div#servicesAbout h3 {
+    color: #1E6FB1;
+    font-weight: 600;
+}
+.contentServicesAbout {
+    max-width: 650px;
+    margin-left: auto;
+}
+.underlines {
+    max-width: 700px;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 62px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.underlines::after {content: "";width: 40px;height: 4px;background: #1e6fb1;display: block;position: absolute;bottom: 0;}
+
+.headerAboutCOntent p {
+    margin-bottom: 50px;
+    max-width: 646px;
+    font-size: 18px;
+    color: #1C1C1C;
+    line-height: 30px;
+}
+
+.blueHeading {
+    color: #1E6FB1;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.aboutcontainer {
+    padding: 70px 0px;
+}
+.aboutcontainer .container {
+    max-width: 1240px;
+}
+div#servicesAbout .row:last-child {
+    margin-bottom: 0px;
 }
 
 
@@ -1328,20 +1403,20 @@ header.scrolled {
     }
 
     .menucontainer h6::after {
-    	content: "";
-    	display: block;
-    	width: 7px;
-    	height: 7px;
-    	border: 2px solid #fff;
-    	position: absolute;
-    	right: 0;
-    	top: -5px;
-    	bottom: 0;
-    	margin: auto;
-    	border-left: 0;
-    	border-top: 0;
-    	transform: rotate(45deg);
-    	transition: 0.5s all
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border: 2px solid #fff;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        bottom: 0;
+        margin: auto;
+        border-left: 0;
+        border-top: 0;
+        transform: rotate(45deg);
+        transition: 0.5s all
     }
 
     footer .container {
@@ -1373,7 +1448,7 @@ header.scrolled {
         transition: 0.5s all
     }
     .menucontainer h6.active:after {
-    	transition: 0.5s all
+        transition: 0.5s all
     }
     .accessories img {
         height: auto;
@@ -1458,15 +1533,15 @@ header.scrolled {
     }
 
     div#scrolledmenu a {
-    	display: block;
-    	margin-bottom: 40px;
-    	font-size: 30px;
-    	text-align: right;
-    	max-width: 100%;
-    	width: 100%;
-    	text-align: right;
-    	margin-left: 0px;
-    	padding-right: 20px;
+        display: block;
+        margin-bottom: 40px;
+        font-size: 30px;
+        text-align: right;
+        max-width: 100%;
+        width: 100%;
+        text-align: right;
+        margin-left: 0px;
+        padding-right: 20px;
     }
 
     div#scrolledmenu ul li {
