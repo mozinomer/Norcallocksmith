@@ -1,3 +1,5 @@
+<?php if(! is_page('contact-us')) { ?>
+	
 <div class="getintouch">
 	<div class="container">
 		<div class="contentlefttouch">
@@ -13,6 +15,9 @@
 		</div>
 	</div>
 </div>
+<?php } ?>
+
+
 <footer>
 	<div class="footertop">
 		<div class="container">
