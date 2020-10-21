@@ -1,4 +1,18 @@
+<div class="getintouch">
+	<div class="container">
+		<div class="contentlefttouch">
+			<div class="ctasu">
+			<h2>Get In Touch With Us!</h2>
+			<p>What ever your locksmithing needs may be our Norcal Locksmiths are here to provide you with the highest quality service. Guaranteed!</p>
+			</div>
+			<!-- <button ></button> -->
 
+			<a href="tel:916-632-3400" class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="916-632-3400">
+				<span><i class="fa fa-phone"></i>916-632-3400<span>
+			</a>
+		</div>
+	</div>
+</div>
 <footer>
 	<div class="footertop">
 		<div class="container">
@@ -77,7 +91,7 @@
 		</div>
 	</div>
 </footer>
-
+<?php wp_footer(); ?>
 </body>
 <script src="<?php echo get_template_directory_uri(); ?>/chamanHutiye.js"></script>
 </html>
