@@ -4,19 +4,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/1.png">
+				<img src="<?php the_field('imageHA'); ?>">
 			</div>
 			<div class="col-md-6">
 				<div class="contentabout">
-					<h6>ABOUT US</h6>
-					<h2>Over 10 Years Of Experience In Serve People</h2>
-					<p>NorCal Locksmith is the premier locksmithing service in the greater placer county
-					area. We pride ourselves on providing our customers with professional and quality
-					work. At all times we hold your security and confidentiality as our number one
-					obligation. You can rest assured that our locksmiths have had extensive background
-					checks done</p>
-					<p>this is our way of guaranteeing to you that we will provide you with a professional 	Locksmithing experience.</p>
-					<a href="#" class="bluebutton">LEARN MORE</a>
+					<h6><?php the_field('sub_headingHA'); ?></h6>
+					<h2><?php the_field('headingHA'); ?></h2>
+					<p><?php the_field('content_pargraph_1'); ?></p>
+					<p><?php the_field('content_para_2'); ?></p>
+					<a href="<?php the_field('button_linkHA'); ?>" class="bluebutton"><?php the_field('button_textHA'); ?></a>
 				</div>
 			</div>
 		</div>
@@ -24,50 +20,40 @@
 </div>
 <div class="whatwedo">
 	<div class="container">
-		<h6>WHAT WE DO</h6>
-		<h2>Locked Out? Need Your House Or Car Opened?</h2>
-		<p>Lost your keys? Need a new one?</p>
-		<a href="#" class="bluebutton">CONTACT US</a>
+		<h6><?php the_field('subheadingWh'); ?></h6>
+		<h2><?php the_field('headingWH'); ?></h2>
+		<p><?php the_field('contentWH'); ?></p>
+		<a href="<?php the_field('button_linkWH'); ?>" class="bluebutton"><?php the_field('button_textWH'); ?></a>
 		<div class="sliderCOntainerwhatwedo">
-			<div class="slideWhat">
-				<div class="imgaeCOntainerwhat">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-				</div>
-				<div class="contentWhatSlider">
-					<h3>Commercial</h3>
-					<p>Lock Rekeys, Key duplication, Restricted Keyways for key control, access control installation and repair</p>
-					<a href="#">Read More</a>
-				</div>
-			</div>
-			<div class="slideWhat">
-				<div class="imgaeCOntainerwhat">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-				</div>
-				<div class="contentWhatSlider">
-					<h3>Commercial</h3>
-					<p>Lock Rekeys, Key duplication, Restricted Keyways for key control, access control installation and repair</p>
-					<a href="#">Read More</a>
-				</div>
-			</div>
-			<div class="slideWhat">
-				<div class="imgaeCOntainerwhat">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-				</div>
-				<div class="contentWhatSlider">
-					<h3>Commercial</h3>
-					<p>Lock Rekeys, Key duplication, Restricted Keyways for key control, access control installation and repair</p>
-					<a href="#">Read More</a>
-				</div>
-			</div>
+			<?php 
+			    $args = array(  
+			        'post_type' => 'services',
+			        'post_status' => 'publish',
+			    );
+			    $loop = new WP_Query( $args );  while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<div class="slideWhat">
+						<div class="imgaeCOntainerwhat">
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+						</div>
+						<div class="contentWhatSlider">
+							<h3><?php the_title(); ?></h3>
+							<div class="contentCOntainerServiceHOmepage">
+								<?php the_content(); ?>
+							</div>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				<?php endwhile; wp_reset_postdata(); 
+			?>
 		</div>
 	</div>
 </div>
-<div class="bannerinnerCTA" style="background: url('<?php echo get_template_directory_uri(); ?>/images/4.png');">
+<div class="bannerinnerCTA" style="background: url('<?php the_field('banner_backgroundCTA'); ?>');">
 	<div class="contaienr">
 		<div class="contentcontainerCTA">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/5.png">
-			<p>What ever your locksmithing needs may be our Norcal Locksmith are here to provide you with the highest quality service. Guaranteed!</p>
-			<a href="#"><i class="fa fa-phone"></i>916-632-3400</a>
+			<img src="<?php the_field('banner_iconCTA'); ?>">
+			<p><?php the_field('banner_contentCTA'); ?></p>
+			<a href="<?php the_field('phone_numbera', 'option'); ?>"><i class="fa fa-phone"></i><?php the_field('phone_numbera', 'option'); ?></a>
 		</div>
 	</div>
 </div>
@@ -76,54 +62,26 @@
 		<h6>OUR TEAM</h6>
 		<h2>Meet Our Experts</h2>
 		<div class="teamslider">
-			<div class="teammember">
-				<div class="imageAndSocialCOntainer">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<div class="socialMediaCOntentTeam">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
+			<?php 
+			    $args = array(  
+			        'post_type' => 'team',
+			        'post_status' => 'publish',
+			    );
+			    $loop = new WP_Query( $args );  while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<div class="teammember">
+						<div class="imageAndSocialCOntainer">
+							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
+							<div class="socialMediaCOntentTeam">
+								<a href="<?php the_field('facebookLiink'); ?>"><i class="fa fa-facebook"></i></a>
+								<a href="?php the_field('linkedin_link'); ?>"><i class="fa fa-linkedin"></i></a>
+								<a href="?php the_field('twitter_link'); ?>"><i class="fa fa-twitter"></i></a>
+							</div>
+						</div>
+						<h3><?php the_title(); ?></h3>
+						<span class="designation"><?php the_field('designation'); ?> </span>
 					</div>
-				</div>
-				<h3>Matthew Wade</h3>
-				<span class="designation">Owner, Manager </span>
-			</div>
-			<div class="teammember">
-				<div class="imageAndSocialCOntainer">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<div class="socialMediaCOntentTeam">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-					</div>
-				</div>
-				<h3>Matthew Wade</h3>
-				<span class="designation">Owner, Manager </span>
-			</div>
-			<div class="teammember">
-				<div class="imageAndSocialCOntainer">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<div class="socialMediaCOntentTeam">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-					</div>
-				</div>
-				<h3>Matthew Wade</h3>
-				<span class="designation">Owner, Manager </span>
-			</div>
-			<div class="teammember">
-				<div class="imageAndSocialCOntainer">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/2.png">
-					<div class="socialMediaCOntentTeam">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-linkedin"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-					</div>
-				</div>
-				<h3>Matthew Wade</h3>
-				<span class="designation">Owner, Manager </span>
-			</div>
+			    <?php endwhile; wp_reset_postdata(); 
+			?>
 		</div>
 	</div>
 </div>

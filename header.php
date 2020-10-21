@@ -32,13 +32,11 @@
                 <a href="#" class="bluebutton">Contact us</a>
             </div>
             <div class="menucontainerMain" id="scrolledmenu">
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">resources</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
+                <?php
+                    wp_nav_menu( array( 
+                        'theme_location' => 'header-menu', 
+                        'container_class' => 'custom-menu-class' ) ); 
+                ?>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -48,45 +46,32 @@
         </div>
     </div>
     <div class="menucontainerMain">
-        <ul>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">resources</a></li>
-            <li><a href="#">contact us</a></li>
-        </ul>
+        <?php
+            wp_nav_menu( array( 
+                'theme_location' => 'header-menu', 
+                'container_class' => 'custom-menu-class' ) ); 
+        ?>
     </div>
 </header>
 
 <?php if( is_front_page()) { ?>
     <div class="bannerCOntainer">
         <div class="sliderContainer">
-            <div class="slidebanner" style="background: url('<?php echo get_template_directory_uri(); ?>/images/3.png');">
-                <div class="container">
-                    <div class="contentslider">
-                        <h6>We’re There For Your Care</h6>
-                        <h2>Get All The Locks Done</h2>
-                        <p>NorCal Locksmith is the premier locksmithing service in the greater Sacramento California area</p>
-                        <div class="containerbutton">
-                            <a href="#" class="bluebutton">LEARN MORE</a>
-                            <a href="#" class="whitebutton">OUR SERVICES</a>
+             <?php //if( have_rows('list_itemsServices') ): while( have_rows('list_itemsServices') ) : the_row(); ?>
+                <div class="slidebanner" style="background: url('<?php the_field('banner_background_image', 5); ?>');">
+                    <div class="container">
+                        <div class="contentslider">
+                            <h6><?php the_field('banner_sub_heading', 5); ?></h6>
+                            <h2><?php the_field('main_heading', 5); ?></h2>
+                            <p><?php the_field('contentH', 5); ?></p>
+                            <div class="containerbutton">
+                                <a href="<?php the_field('button_1_link', 5); ?>" class="bluebutton"><?php the_field('button_1_text', 5); ?></a>
+                                <a href="<?php the_field('button_2_link', 5); ?>" class="whitebutton"><?php the_field('button_2_text', 5); ?></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="slidebanner" style="background: url('<?php echo get_template_directory_uri(); ?>/images/3.png');">
-                <div class="container">
-                    <div class="contentslider">
-                        <h6>We’re There For Your Care</h6>
-                        <h2>Get All The Locks Done</h2>
-                        <p>NorCal Locksmith is the premier locksmithing service in the greater Sacramento California area</p>
-                        <div class="containerbutton">
-                            <a href="#" class="bluebutton">LEARN MORE</a>
-                            <a href="#" class="whitebutton">OUR SERVICES</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php //endwhile; else : endif; ?> 
         </div>
     </div>
 <?php } else { ?>

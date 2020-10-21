@@ -7,8 +7,8 @@
 			</div>
 			<!-- <button ></button> -->
 
-			<a href="tel:916-632-3400" class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="916-632-3400">
-				<span><i class="fa fa-phone"></i>916-632-3400<span>
+			<a href="tel:<?php the_field('phone_numbera', 'option'); ?>" class="button button--rayen button--border-thin button--text-thick button--text-upper button--size-s" data-text="<?php the_field('phone_numbera', 'option'); ?>">
+				<span><i class="fa fa-phone"></i><?php the_field('phone_numbera', 'option'); ?><span>
 			</a>
 		</div>
 	</div>
@@ -23,7 +23,7 @@
 					<p>Feel free to get in touch with us via email or phone</p>
 					<div class="infoLInks">
 						<a href="mailto:alex.reid@mail.com">alex.reid@mail.com</a>
-						<a href="tel:916-632-3400">916-632-3400</a>
+						<a href="tel:<?php the_field('phone_numbera', 'option'); ?>"><?php the_field('phone_numbera', 'option'); ?></a>
 					</div>
 				</div>
 				<div class="col-md-4">
