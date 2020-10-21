@@ -73,8 +73,8 @@
 							<img src="<?php echo get_the_post_thumbnail_url(); ?>">
 							<div class="socialMediaCOntentTeam">
 								<a href="<?php the_field('facebookLiink'); ?>"><i class="fa fa-facebook"></i></a>
-								<a href="?php the_field('linkedin_link'); ?>"><i class="fa fa-linkedin"></i></a>
-								<a href="?php the_field('twitter_link'); ?>"><i class="fa fa-twitter"></i></a>
+								<a href="<?php the_field('linkedin_link'); ?>"><i class="fa fa-linkedin"></i></a>
+								<a href="<?php the_field('twitter_link'); ?>"><i class="fa fa-twitter"></i></a>
 							</div>
 						</div>
 						<h3><?php the_title(); ?></h3>
