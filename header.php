@@ -84,7 +84,7 @@
             <?php //endwhile; else : endif; ?> 
         </div>
     </div>
-<?php } if(!is_front_page() || !is_single() ) { ?>
+<?php } else { ?>
     <div class="bannerOther" style="background-image: url('<?php the_field('imageBanner'); ?>')">
         <div class="container">
             <div class="contentOtherbanner">

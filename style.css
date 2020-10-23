@@ -1405,6 +1405,119 @@ ul.socialinfocompany img {
     font-size: 18px;
 }
 
+.blogcontent {
+    margin: 100px 0px;
+}
+.recentPostContainer h4 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.recentPostContainer ul {
+    list-style: none;
+}
+
+.recentPostContainer h5 {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.recentPostContainer p {
+    color: #919191;
+    font-size: 14px;
+}
+
+.recentPostContainer,.newsletterForm {
+    max-width: 300px;
+    margin-left: auto;
+}
+.recentPostContainer ul {
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+    padding-top: 30px; 
+}
+.newsletterForm {
+    margin: 30px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.newsletterForm h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.newsletterForm p:first-of-type {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.newsletterForm input {
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+.newsletterForm input[type="text"] {
+    border: 1px solid #CECECE;
+}
+
+.newsletterForm input[type="submit"] {
+    background: #7E7F66;
+    opacity: 1;
+    border: 2px solid #7e7f66;
+    margin: 20px 0px 0px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.7s all;
+    letter-spacing: 1px;
+}
+
+.newsletterForm input[type="submit"]:hover {
+    background: none;
+    color: #7e7f66;
+    transition: 0.7s all;
+}
+.blogcontent .col-md-8 p {
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    opacity: 0.7;
+}
+.singlePageBanner {
+    min-height: auto;
+    padding: 200px 0px 100px;
+    background-size: 100% 100%;
+}
+
+.recentPostContainer, .newsletterForm {
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
