@@ -27,7 +27,6 @@
 	</div>
 </div>
 
-<!-- HOW TO VIDEOS -->
 <section class="htv-section">
 	<div class="container">
 		<h1><?php the_field('headingHTV'); ?></h3>
@@ -81,7 +80,5 @@
 			</div>
 		</div>
 </section>   
-
-	  
 
 <?php get_footer(); ?>

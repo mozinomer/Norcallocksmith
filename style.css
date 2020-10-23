@@ -807,9 +807,31 @@ a.letsTalks {
     border: 2px solid #FEDE52;
 }
 
-a.letsTalks::after {content: "";display: block;width: 30px;height: 2px;background: #000;position: absolute;right: 30px;}
+a.letsTalks::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 30px;
+}
 
-a.letsTalks::before {content: "";display: block;width: 13px;height: 14px;border: 3px solid #000;position: absolute;right: 32px;transform: rotate(45deg);border-left: 0;border-bottom: 0;}
+a.letsTalks::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 14px;
+    border: 3px solid #000;
+    position: absolute;
+    right: 32px;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-bottom: 0;
+    top: 1px;
+    bottom: 0px;
+    margin: auto;
+}
 
 a.letsTalks:hover {
     background: none;
