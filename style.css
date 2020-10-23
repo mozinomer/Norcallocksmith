@@ -1206,27 +1206,176 @@ ul.socialinfocompany img {
 
 
 
+/* Resources Page Css */
+.htv-section {
+    width: 100%;
+    padding: 100px 0px;
+}
+.htv-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.htv-section h1 {
+    font-weight: bold;
+}
+.htv-box {
+    width: 32%;
+}
+.htv-img {
+    width: 100%;
+    /* height: 220px; */
+    position: relative;
+}
+.htv-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.htv-img-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 25px;
+}
 
+.htv-img-overlay img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.htv-box-title {
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.lmf-section {
+    width: 100%;
+    padding-bottom: 100px;
+}
+.site-cus-title {
+    font-size: 20px;
+    color: #1e6fb1;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.site-cus-title:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #1e6fb1;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.lmf-section {
+    width: 100%;
+    padding-bottom: 100px;
+}
 
+.site-cus-title {
+    font-size: 20px;
+    color: #1e6fb1;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.site-cus-title:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #1e6fb1;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.lmf-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+}
+.lmf-img {
+    width: 24%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lmf-img img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    object-fit: contain;
+}
+.site-cus-extra-title {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 42px;
+    font-weight: 800;
+}
+.lss-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lss-box {
+    width: 50%;
+    padding: 7% 5%;
+}
+.lss-box h3{
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.lss-box:first-child{
+    background-color: #F7F7F7;
+    color: #fff;
+}
+.lss-box:first-child h3{
+    color: #000;
+    margin-top: 20px;
+}
+.lss-box:first-child p{
+    color: #1C1C1C;
+}
+.lss-box:last-child{
+    background-color: #005F99;
+    color: #fff;
+}
+.lss-box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #1E6FB1;
+    color: #Fff;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
 
 
 
@@ -1241,6 +1390,13 @@ ul.socialinfocompany img {
 
 
 /*media */
+@media only screen and (max-width: 991px){
+    .htv-img{
+        height: 180px;
+    }
+}
+
+
 @media only screen and (max-width: 767px) {
     .slidebanner {
         min-height: auto;
@@ -1755,6 +1911,52 @@ ul.socialinfocompany img {
 
     .contentsection2about li img {
         width: 40px;
+    }
+
+
+
+    /* Resources Page */
+    .htv-section{
+        padding: 50px 0px;
+    }
+    .htv-content{
+        flex-flow: row wrap;
+    }
+    .htv-box{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .htv-box:last-child{
+        padding-bottom: 0px;
+    }
+    .lmf-content{
+        flex-flow: row wrap;
+    }
+    .lmf-img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .lmf-section{
+        padding-bottom: 50px;
+    }
+    .site-cus-extra-title{
+        margin-bottom:30px;
+    }
+    .lss-content{
+        flex-flow: row wrap;
+    }
+    .lss-box{
+        width: 100%;
+    }
+    .htv-section h1 {
+        font-weight: 800;
+        font-size: 29px;
+    }
+    .site-cus-extra-title {
+        font-size: 30px;
+    }
+    .lss-box h3{
+        font-size: 20px;
     }
 }
 
