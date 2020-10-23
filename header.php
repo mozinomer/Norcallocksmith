@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
 </head>
 <?php wp_head(); ?>
-<body>
+<body <?php body_class(); ?>>
 <header>
     <div class="headertopCOntainer">
         <div class="container">
@@ -64,7 +64,7 @@
     </div>
 </header>
 
-<?php if( is_front_page()) { ?>
+<?php if( is_front_page() )  { ?>
     <div class="bannerCOntainer">
         <div class="sliderContainer">
              <?php //if( have_rows('list_itemsServices') ): while( have_rows('list_itemsServices') ) : the_row(); ?>
@@ -84,7 +84,7 @@
             <?php //endwhile; else : endif; ?> 
         </div>
     </div>
-<?php } else { ?>
+<?php } if(!is_front_page() || !is_single() ) { ?>
     <div class="bannerOther" style="background-image: url('<?php the_field('imageBanner'); ?>')">
         <div class="container">
             <div class="contentOtherbanner">

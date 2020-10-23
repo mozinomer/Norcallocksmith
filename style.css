@@ -1382,7 +1382,28 @@ ul.socialinfocompany img {
     overflow: hidden;
 }
 
+.single .bannerOther {
+    display: none;
+}
 
+.singlePageBanner {
+    min-height: 600px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.singlePageBanner h2 {
+    font-size: 54px;
+    font-weight: 300;
+}
+
+.singlePageBanner p {
+    font-size: 18px;
+}
 
 
 
