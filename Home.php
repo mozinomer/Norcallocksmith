@@ -85,7 +85,7 @@
 		</div>
 	</div>
 </div>
-<div class="keyfeautres">
+<div class="keyfeautres" id="carimage" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/9.png');">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">

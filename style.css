@@ -222,7 +222,7 @@ body {
 
 .contentWhatSlider {
     text-align: left;
-    margin: 20px 0px 0px;
+    margin: 30px 0px 0px;
 }
 
 .contentWhatSlider h3 {
@@ -257,6 +257,7 @@ body {
     justify-content: center;
     text-align: center;
     color: #fff;
+    background-position: center center !important;
 }
 
 .bannerinnerCTA img {
@@ -436,13 +437,16 @@ span.designation {
     color: #fff;
 }
 .accessories {
-    padding: 100px 0px;
+    padding: 170px 0px 100px;
 }
 
 .accessories a {
     max-width: max-content;
     padding: 0px 30px;
     margin: 40px 0px 0px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 9px;
 }
 
 .accessories h6 {
@@ -462,7 +466,7 @@ span.designation {
 .accessories h2::after {content: "";display: block;width: 40px;height: 4px;background: #1e6fb1;position: absolute;bottom: 0;}
 
 .accessories p {
-    font-size: 18px;
+    font-size: 16px;
     opacity: 0.9;
     font-weight: 300;
     max-width: 427px;
@@ -470,8 +474,11 @@ span.designation {
 }
 
 .accessories img {
-    height: 412px;
+    height: 442px;
     margin-left: auto;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .accessories .container {
@@ -488,9 +495,10 @@ span.designation {
 
 .slideItemtestimonials h6 {
     padding: 0px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: left;
     margin: 10px 0px 0px;
+    font-size: 18px;
 }
 
 .slideItemtestimonials h6:after {
@@ -498,12 +506,13 @@ span.designation {
 }
 
 p.designatedPerson {
-    font-size: 14px;
-    margin-bottom: 40px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    font-weight: 100;
 }
 
 p.testimonialreview {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     opacity: 0.8;
 }
@@ -760,6 +769,7 @@ footer ul {
 .footertop h2 {
     font-size: 42px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .footertop p {
@@ -774,6 +784,8 @@ footer ul {
     font-weight: 700;
     color: #1E6FB1;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .infoLInks {
@@ -931,6 +943,7 @@ header {
     padding: 0px 30px;
     margin-left: 30px;
     margin-right: 0px;
+    min-width: 170px;
 }
 
 span.timingHeader {
@@ -1585,11 +1598,31 @@ ul.socialinfocompany img {
 form.wpcf7-form p:nth-child(6) {
     text-align: right !important;
 }
+.timingandcontact a {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.timingandcontact a:hover {
+    border: 2px solid;
+}
+.teammember:hover h3 {
+    color: #1E6FB1;
+}
+div#carimage {
+    background-repeat: no-repeat;
+    background-position: -6% 90%;
+}
+.infoLInks a {
+    text-decoration: underline;
+}
 
-
-
-
-
+.joinTeam a {
+    text-decoration: underline;
+}
+.copyrights p {
+    padding-left: 20px;
+}
 
 
 
@@ -1614,6 +1647,25 @@ form.wpcf7-form p:nth-child(6) {
 
 
 /*media */
+@media only screen and (max-width: 1440px) {
+.contentabout h2 {
+    font-size: 42px;
+}
+.contentslider {
+    max-width: 419px;
+}
+}
+
+@media only screen and (max-width: 1240px)  {
+.contentabout h2 {
+    font-size: 35px;
+}
+.contentabout p {
+    font-size: 15px;
+}
+}
+
+
 @media only screen and (max-width: 991px){
     .htv-img{
         height: 180px;
