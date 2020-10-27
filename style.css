@@ -817,16 +817,20 @@ a.letsTalks {
     margin-top: 30px;
     position: relative;
     border: 2px solid #FEDE52;
+    padding-left: 30px;
 }
 
 a.letsTalks::after {
     content: "";
     display: block;
-    width: 30px;
+    width: 23px;
     height: 2px;
     background: #000;
     position: absolute;
     right: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 a.letsTalks::before {
