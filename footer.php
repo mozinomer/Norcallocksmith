@@ -17,6 +17,10 @@
 </div>
 <?php } ?>
 
+<?php if (is_front_page() || is_page('about') || is_page('services')  ) { ?>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2426.910396706753!2d13.388001115716332!3d52.535055342865995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851f217b14267%3A0xea53fe8afbc1b1ac!2sBerlin%20Wall%20Memorial!5e0!3m2!1sen!2s!4v1603467582237!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<?php } ?>
+
 
 <footer>
 	<div class="footertop">
@@ -67,7 +71,7 @@
 							<?php
 			                    wp_nav_menu( array( 
 			                        'theme_location' => 'header-menu', 
-			                        'container_class' => 'custom-menu-class' ) ); 
+			                        'container_class' => 'custom-menu-class','container'=> false, ) ); 
 			                ?>
 						</div>
 						<div class="menucontainer">

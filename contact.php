@@ -27,7 +27,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="<?php the_field('company_addressco'); ?>">
+							<img src="<?php the_field('company_addresscoasd'); ?>">
 							<p>
 								<?php the_field('company_addressco'); ?>
 							</p>
@@ -40,7 +40,7 @@
 					<?php the_field('content_for_form'); ?>
 				</p>
 				<div class="formcontaienr">
-					<?php //echo do_short_code('') ?>
+					<?php echo do_shortcode('[contact-form-7 id="212" title="C0N7@C7 P@G3"]') ?>
 				</div>
 			</div>
 		</div>
