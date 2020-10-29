@@ -1690,6 +1690,16 @@ h2.underlines {
 .contentAboutSection h6 {
     font-size: 16px;
 }
+p.contentbigger {
+    font-size: 23px;
+    line-height: normal;
+    margin-right: 70px;
+}
+
+.contentcontactPage h6 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
 }
 
 @media only screen and (max-width: 1240px)  {
