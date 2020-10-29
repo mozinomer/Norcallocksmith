@@ -1627,7 +1627,12 @@ div#carimage {
 .copyrights p {
     padding-left: 20px;
 }
-
+.site-cus-title {
+    text-transform: uppercase;
+}
+.lss-box:last-child h3 {
+    margin-top: 100px;
+}
 
 
 
@@ -1658,6 +1663,33 @@ div#carimage {
 .contentslider {
     max-width: 419px;
 }
+.contentsection2about p {
+    font-size: 22px;
+    line-height: 23px;
+}
+
+h2.underlines {
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.contentsection2about li {
+    font-size: 15px;
+}
+
+.contentsection2about img {
+    width: 50px;
+}
+
+.contentAboutSection span {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.contentAboutSection h6 {
+    font-size: 16px;
+}
 }
 
 @media only screen and (max-width: 1240px)  {
@@ -1666,6 +1698,9 @@ div#carimage {
 }
 .contentabout p {
     font-size: 15px;
+}
+.aboutcontainer .container {
+    max-width: 90%;
 }
 }
 
